@@ -14,7 +14,7 @@ html,body{
     background-size: cover; /* Cover the entire container */
     background-position: center; 
     background-repeat: no-repeat; /* Prevent the image from repeating */
-        height: auto; /* Full viewport height */
+        height: 120vh; /* Full viewport height */
 
 }
 
