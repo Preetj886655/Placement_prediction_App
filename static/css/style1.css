@@ -3,15 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+html,body{
+    width: 1200px;
+}
 
 
 .main {
     width: 1200px;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url('../images/img1 (2).jpg');
     background-size: cover; /* Cover the entire container */
-    /* background-position: center;  */
+    background-position: center; 
     background-repeat: no-repeat; /* Prevent the image from repeating */
-        height: 130vh; /* Full viewport height */
+        height: auto; /* Full viewport height */
 
 }
 
@@ -50,6 +53,7 @@ ul{
     display: flex;
     justify-content: flex-end;
     align-items: end;
+    padding-right: 40px;
 }
 
 ul li{
@@ -71,6 +75,7 @@ ul li a{
     color: #fff;
     font-family: Arial;
     font-weight: bold;
+    font-size:30px;
     transition: 0.4s ease-in-out;
 }
 
@@ -120,7 +125,11 @@ ul li a:hover{
 .btn:focus{
     outline: none;
 }
-
+@media (max-width:475px){
+    .content .par{
+        margin-top: 100%;
+    }
+}
 .srch:focus{
     outline: none;
 }
@@ -128,7 +137,7 @@ ul li a:hover{
 .content{
     width: 1200px;
     height: auto;
-    margin: auto;
+    /* margin: auto; */
     color: #fff;
     position: relative;
 }
@@ -137,28 +146,40 @@ ul li a:hover{
     padding-left: 20px;
     padding-bottom: 25px;
     font-family: Arial;
-    
+    font-size:40px;
+    margin-top: 4%;
     letter-spacing: 1.2px;
-    line-height: 30px;
+    line-height: 50px;
     
 }
 
-.content h1{
-    font-family: 'Times New Roman';
-    font-size: 50px;
-    padding-left: 20px;
-    margin-top: 9%;
-    letter-spacing: 2px;
+.content h1 {
+   
+  font-size: 3rem;
+  color: var(--primary-color);
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
 }
+
+.content h1 .app {
+  display: block;           /* Forces it to a new line */
+  font-size: 2.8rem;        /* Optional: slightly smaller or bigger */
+  color: var(--secondary-color); /* Optional: different color */
+  margin-top: 0.2em;
+}
+
 
 .content .cn{
-    width: 160px;
-    height: 40px;
+    width: 300px;
+    height: 70px;
     background: #ff7200;
     border: none;
     margin-bottom: 10px;
     margin-left: 20px;
-    font-size: 20px;
+    font-size: 50px;
     border-radius: 10px;
     cursor: pointer;
     transition: .4s ease;
@@ -176,8 +197,8 @@ ul li a:hover{
 }
 
 .content span{
-    color: #ff7200;
-    font-size: 65px
+    
+    font-size: 50px
 }
 
 .con{
@@ -313,4 +334,36 @@ ul li a:hover{
     bottom:0;
     width:100%;
     
+}
+.content .par {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 25px;
+  font-family: Arial, sans-serif;
+  font-size: 2rem; /* Instead of 40px */
+  margin-top: 4%;
+  letter-spacing: 1.2px;
+  line-height: 1.6; /* More flexible than 50px */
+  text-align: justify; /* Optional: makes paragraph cleaner */
+}
+
+/* 📱 Responsive tweaks for small screens */
+@media (max-width: 768px) {
+  .content .par {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: left;
+    padding-top: 800px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content .par {
+    font-size: 1rem;
+    padding: 10px;
+    margin-top: 40px;
+    line-height: 1.4;
+  }
 }
