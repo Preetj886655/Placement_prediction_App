@@ -38,7 +38,7 @@ Result Display: The prediction result (Placed / Not Placed) is displayed on the 
 Clone this repository
 
 bash
-git clone https://github.com/yourusername/Placement_prediction_App.git
+git clone https://github.com/Preetj886655/Placement_prediction_App.git
 cd Placement_prediction_App
 Install dependencies
 
@@ -92,3 +92,4 @@ Click on "Predict" to see if the student is likely to be placed.
 Inspired by real-world campus placement prediction challenges and academic ML projects.
 
 Powered by open-source technologies.
+
