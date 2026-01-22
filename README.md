@@ -49,7 +49,7 @@ Run the App
 bash
 python app.py
 The app will be available  at https://placement-prediction-app-14.onrender.com/
-
+The app will be available  at https://huggingface.co/spaces/Preetj2/Placement_prediction_web_app
 📁 Project Structure
 text
 Placement_prediction_App/
@@ -92,4 +92,5 @@ Click on "Predict" to see if the student is likely to be placed.
 Inspired by real-world campus placement prediction challenges and academic ML projects.
 
 Powered by open-source technologies.
+
 
